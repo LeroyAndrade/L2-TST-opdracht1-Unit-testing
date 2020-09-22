@@ -49,7 +49,7 @@ ToyotaGroen2020Variabel.showVoorraad();
 //volgende zijn uitvoerbaar, bekijk de console.log
 
 //voorraad met 1 stuks kunt verhogen         ToyotaGroen2020Variabel.verhoogVoorraadMet1();
-//         met meerdere stuks kunt verlagen  ToyotaGroen2020Variabel.verlaagVoorraadMet(2)
+//             meerdere stuks kunt verlagen  ToyotaGroen2020Variabel.verlaagVoorraadMet(2)
 //                                 verhogen  ToyotaGroen2020Variabel.verhoogVoorraadMet(5)
 
 
