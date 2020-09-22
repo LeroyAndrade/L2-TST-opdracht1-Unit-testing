@@ -19,27 +19,30 @@ class ToyotaGroen2020
 
         verlaagVoorraadMet(somAftrekken){
             let verlagenMulti = this;
-            verlagenMulti.somAftrekken = somAftrekken;
+            verlagenMulti.somAftrekken = parseFloat(somAftrekken);
 
-            if(this.voorraad <=0){
-                console.log("Geen voorraad beschikbaar voor dit artikel, verlaging kan niet plaatsvinden. Wilt u nieuwe modellen bestellen ?    :    ");
-            } else{
-                console.log((this.voorraad -= verlagenMulti.somAftrekken));
+
+            if((this.voorraad - verlagenMulti.somAftrekken >=1)){
+                console.log(this.voorraad -= verlagenMulti.somAftrekken);
             }
+            
+            else {
+                console.log("Geen voorraad beschikbaar voor dit artikel, verlaging kan niet plaatsvinden. Er zijn", this.voorraad, " op deze locatie beschikbaar. Wilt u nieuwe modellen bestellen ?    :    ");
+            } 
         }
 
         verhoogVoorraadMet(optellenMulti){
         let verhogerMulti = this;
-            verhogerMulti.optellenMulti = optellenMulti;
+            verhogerMulti.optellenMulti = parseFloat(optellenMulti);
             console.log((this.voorraad += verhogerMulti.optellenMulti));
         }
 }
-let ToyotaGroen2020Variabel = new ToyotaGroen2020("Toyota", 50);
+let ToyotaGroen2020Variabel = new ToyotaGroen2020("Toyota", 5);
 ToyotaGroen2020Variabel.showVoorraad();
 //volgende zijn uitvoerbaar, bekijk de console.log
 
 //voorraad met 1 stuks kunt verhogen         ToyotaGroen2020Variabel.verhoogVoorraadMet1();
-//             meerdere stuks kunt verlagen  ToyotaGroen2020Variabel.verlaagVoorraadMet(2)
+//         met meerdere stuks kunt verlagen  ToyotaGroen2020Variabel.verlaagVoorraadMet(2)
 //                                 verhogen  ToyotaGroen2020Variabel.verhoogVoorraadMet(5)
 
 
