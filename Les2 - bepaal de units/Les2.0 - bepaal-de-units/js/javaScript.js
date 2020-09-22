@@ -14,21 +14,28 @@ class ToyotaGroen2020
     }
         
         verhoogVoorraadMet1(){
-            console.log(this.voorraad =1);
+            console.log(this.voorraad +=1);
         }
 
         verlaagVoorraadMet(somAftrekken){
             let verlagenMulti = this;
             verlagenMulti.somAftrekken = parseFloat(somAftrekken);
 
-
-            if((this.voorraad - verlagenMulti.somAftrekken >=1)){
-                console.log(this.voorraad -= verlagenMulti.somAftrekken);
+            if((this.voorraad === parseFloat(0) || this.voorraad < parseFloat(0) || this.voorraad <= parseFloat(0) || this.voorraad - verlagenMulti.somAftrekken <= parseFloat(-1))){
+                console.log("Geen voorraad beschikbaar voor dit artikel, verlaging kan niet plaatsvinden. Er zijn", this.voorraad, " op deze locatie beschikbaar. Wilt u nieuwe modellen bestellen ?    :    ");
+                
+                console.log("sec0");
             }
             
-            else {
+            else if((this.voorraad <=parseFloat-1)){
                 console.log("Geen voorraad beschikbaar voor dit artikel, verlaging kan niet plaatsvinden. Er zijn", this.voorraad, " op deze locatie beschikbaar. Wilt u nieuwe modellen bestellen ?    :    ");
+                console.log("sec1");
             } 
+
+            else if(this.voorraad >=1 ){
+                console.log((this.voorraad -= verlagenMulti.somAftrekken));
+                console.log("sec2");
+            }
         }
 
         verhoogVoorraadMet(optellenMulti){
