@@ -52,7 +52,7 @@ array_Studenten.forEach(element => localStorage.setItem('lokaalOpslagKey'+[i], J
 document.write("Key"+[i] + localStorage.getItem('lokaalOpslagKey'+[i])+`<br>`+`<br>`);
 
 //Delete localStorage --> uncomment volgende regel
-localStorage.removeItem("lokaalOpslagKey"+[i]);
+//localStorage.removeItem("lokaalOpslagKey"+[i]);
 }
 
                         console.log(array_Studenten);
