@@ -25,13 +25,7 @@ class ToonData extends Persoon{
       }
     }
 
-
-
 //pas xyz1 class   Persoon aan naar    ToonData voor een ander resultaat
-
-
-
-
 
 //opdracht week #2
 
@@ -40,7 +34,6 @@ class ToonData extends Persoon{
 //Maak nieuw instantie aan
 let xyz0 = new Persoon("Andrade Leroy",30168,"MD2AB");
 let xyz1 = new Persoon("Pietje Puk",3,"MD2A");
-
   
 //bekijk alle studenten die zijn opgeslagen in array_Studenten 
 //zolang i kleiner is als array_Studenten, dan i+=1
