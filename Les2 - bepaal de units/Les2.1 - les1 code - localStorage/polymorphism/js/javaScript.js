@@ -21,15 +21,9 @@ class Persoon
 
 class ToonData extends Persoon{
       studentRegistreren(){
-        console.table(this.student_naam);
-      }
+        console.table(this.student_naam);}
     }
-
-//pas xyz1 class   Persoon aan naar    ToonData voor een ander resultaat
-
 //opdracht week #2
-
-//Het is mij gelukt!
 
 //Maak nieuw instantie aan
 let xyz0 = new Persoon("Andrade Leroy",30168,"MD2AB");
@@ -47,7 +41,6 @@ document.write("Key"+[i] + localStorage.getItem('lokaalOpslagKey'+[i])+`<br>`+`<
 //Delete localStorage --> uncomment volgende regel
 //localStorage.removeItem("lokaalOpslagKey"+[i]);
 }
-
-                        console.log(array_Studenten);
+ console.log(array_Studenten);
 //localStorage.clear();
 
